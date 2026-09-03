@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Privacidad | Tenis & Pádel</title>
-  <meta name="description" content="Política de Privacidad de Tenis & Pádel">
+  <title>Política de Privacidad | Playround</title>
+  <meta name="description" content="Política de Privacidad de Playround">
   <style>
     :root {
       color-scheme: light;
@@ -87,11 +87,10 @@
       <a href="./account-deletion.html">Eliminación de cuenta</a>
     </nav>
     <article>
-      <h1>Politica de Privacidad de Tenis &amp; Padel</h1>
-<p class='note'>Texto base para revision legal antes del deploy publico. No constituye asesoramiento legal definitivo ni reemplaza la revision de un profesional segun la jurisdiccion aplicable.</p>
-<p>Ultima actualizacion: 18/06/2026</p>
+      <h1>Politica de Privacidad de Playround</h1>
+<p>Ultima actualizacion: 03/09/2026</p>
 <h2>1. Identificacion del servicio</h2>
-<p>Tenis &amp; Padel es un servicio digital para registrar y consultar actividad deportiva vinculada a tenis y padel, incluyendo grupos, contactos, partidos, torneos, rankings, cruces y estadisticas de rendimiento.</p>
+<p>Playround es un servicio digital para registrar y consultar actividad deportiva vinculada a tenis y padel, incluyendo grupos, contactos, partidos, torneos, rankings, cruces y estadisticas de rendimiento.</p>
 <p>El responsable del servicio es Agustín Machado. Para consultas sobre privacidad o datos personales, podes escribir a agusmachado@gmail.com.</p>
 <h2>2. Datos que recolectamos</h2>
 <p>Podemos recolectar y tratar las siguientes categorias de datos:</p>
@@ -101,6 +100,7 @@
 <li>Identificador del proveedor de autenticacion.</li>
 <li>Nombre visible o display name.</li>
 <li>Email, si el proveedor de autenticacion lo entrega.</li>
+<li>Fecha de nacimiento y genero competitivo.</li>
 <li>Deporte o deportes preferidos.</li>
 <li>Nivel deportivo declarado o configurado.</li>
 <li>Contactos dentro de la app.</li>
@@ -108,26 +108,36 @@
 <li>Partidos, resultados y datos asociados.</li>
 <li>Torneos, participantes, fixtures, tablas y resultados.</li>
 <li>Rankings, cruces, estadisticas y rendimiento.</li>
+<li>Tokens tecnicos necesarios para enviar notificaciones push.</li>
+<li>Eventos funcionales y propiedades categorizadas de uso cuando Firebase Analytics esta habilitado.</li>
 <li>Datos tecnicos basicos, como informacion de dispositivo, sistema operativo, errores, logs tecnicos y datos necesarios para seguridad y funcionamiento.</li>
 </ul>
-<p>No usamos el email como identidad primaria del producto. La identidad estable interna es el usuario de Tenis &amp; Padel identificado por <code>User.id</code>.</p>
+<p>No usamos el email como identidad primaria del producto. Playround administra cada cuenta mediante un identificador tecnico interno.</p>
 <h2>3. Para que usamos los datos</h2>
 <p>Usamos los datos para:</p>
 <ul>
 <li>Crear, mantener y administrar tu cuenta.</li>
 <li>Permitir el inicio de sesion con Google o Apple.</li>
+<li>Verificar la edad minima requerida para utilizar el servicio.</li>
 <li>Mostrar grupos, contactos, partidos, torneos, rankings, cruces y rendimiento.</li>
 <li>Mantener la separacion operativa entre tenis y padel.</li>
 <li>Mejorar la seguridad, prevenir abuso y diagnosticar errores.</li>
 <li>Brindar soporte y responder consultas.</li>
-<li>Mejorar el producto, sus funciones y su estabilidad.</li>
+<li>Obtener metricas agregadas para mejorar el producto, sus funciones y su estabilidad.</li>
 </ul>
 <h2>4. Login con Google y Apple</h2>
-<p>Google y Apple son metodos de autenticacion. La identidad principal dentro de Tenis &amp; Padel es el usuario interno del producto.</p>
+<p>Google y Apple son metodos de autenticacion. La identidad principal dentro de Playround es el usuario interno del producto.</p>
 <p>Para vincular un metodo de login usamos el proveedor y el identificador estable que ese proveedor entrega. El email puede ayudar a contacto o visualizacion, pero no es la clave primaria de identidad.</p>
 <p>Apple puede ocultar o reemplazar el email real del usuario. Por eso, el email se trata como dato secundario y no como prueba unica de identidad.</p>
-<h2>5. Funciones futuras</h2>
-<p>En el futuro, Tenis &amp; Padel podria incorporar:</p>
+<h2>5. Firebase Analytics</h2>
+<p>Playround utiliza Google Analytics for Firebase en las versiones productivas para obtener metricas agregadas sobre el uso, funcionamiento, estabilidad y mejora del servicio. Las versiones de desarrollo y preview mantienen esta recopilacion desactivada.</p>
+<p>Playround registra unicamente los eventos funcionales que esten efectivamente instrumentados en el producto. Actualmente, estos comprenden la visualizacion de pantallas y determinados hitos del proceso de eliminacion de cuenta. Tambien utiliza propiedades categorizadas, como deportes habilitados, deporte activo, genero competitivo, banda etaria, estado de completitud del perfil e idioma, cuando corresponde.</p>
+<p>Los eventos definidos por Playround no incluyen nombres, emails, apodos, fecha de nacimiento exacta, resultados deportivos exactos, identificadores de partidos, grupos, torneos o solicitudes, tokens, recibos ni texto libre. Playround no asigna su identificador interno de usuario al campo <code>user_id</code> de Analytics.</p>
+<p>Firebase puede recopilar automaticamente un identificador aleatorio de instancia de la aplicacion e informacion tecnica sobre la aplicacion, el dispositivo, el sistema operativo, el idioma, las sesiones y la interaccion. Tambien puede derivar informacion aproximada conforme a su funcionamiento y configuracion. Playround no solicita ubicacion GPS para Analytics.</p>
+<p>Al cerrar sesion, Playround elimina las propiedades analiticas vinculadas a la cuenta anterior, pero conserva la continuidad tecnica de la instalacion. Despues de que una solicitud de eliminacion es aceptada y se limpia la sesion local, Playround reinicia los datos locales de Analytics. Los datos previamente procesados o agregados pueden conservarse conforme a la configuracion de retencion aplicable y a las politicas de Google Analytics.</p>
+<p>Google presta este servicio y puede procesar informacion en los lugares donde mantiene infraestructura o proveedores. Este tratamiento se encuentra sujeto tambien a las condiciones y politicas de privacidad de Google.</p>
+<h2>6. Funciones futuras</h2>
+<p>En el futuro, Playround podria incorporar:</p>
 <ul>
 <li>Version web.</li>
 <li>Links de afiliados a productos fisicos en Mercado Libre, Amazon u otros terceros.</li>
@@ -137,33 +147,35 @@
 <p>Los anuncios personalizados o tecnologias de tracking requeriran consentimiento separado cuando corresponda por ley o por reglas de las plataformas.</p>
 <p>Los links de afiliados seran enlaces externos a bienes o productos ofrecidos por terceros. Las compras se regiran por los terminos del tercero correspondiente.</p>
 <p>Las suscripciones premium, si se implementan, se regiran por condiciones adicionales y por las reglas de Apple App Store o Google Play cuando corresponda.</p>
-<h2>6. Con quienes compartimos datos</h2>
+<h2>7. Con quienes compartimos datos</h2>
 <p>Podemos compartir datos solo cuando sea necesario para operar el servicio o cumplir obligaciones aplicables, por ejemplo con:</p>
 <ul>
 <li>Proveedores de autenticacion, como Google y Apple.</li>
-<li>Proveedores de infraestructura tecnica, hosting, almacenamiento, monitoreo o analitica operativa.</li>
+<li>Proveedores de infraestructura tecnica, hosting, almacenamiento, monitoreo o analitica, incluido Google Analytics for Firebase.</li>
 <li>Tiendas de apps o proveedores de pagos, si en el futuro se habilitan compras o suscripciones.</li>
 <li>Autoridades competentes, cuando exista una obligacion legal valida.</li>
 </ul>
 <p>No vendemos datos personales a anunciantes.</p>
-<h2>7. Retencion de datos</h2>
+<h2>8. Retencion de datos</h2>
 <p>Conservamos los datos mientras sean necesarios para prestar el servicio, mantener historiales deportivos, cumplir obligaciones legales, resolver disputas, prevenir abuso o mejorar la seguridad.</p>
 <p>Algunos datos deportivos pueden permanecer asociados a grupos, torneos, partidos o rankings compartidos con otros usuarios, incluso si una cuenta deja de participar activamente.</p>
-<h2>8. Eliminacion de cuenta y datos</h2>
-<p>Podras solicitar la eliminacion de tu cuenta y datos mediante https://agusmachado.github.io/tennis-padel-legal-pages/account-deletion.html o escribiendo a agusmachado@gmail.com.</p>
-<p>La eliminacion puede no ser instantanea. Algunos datos compartidos con otros usuarios, como resultados de partidos, torneos, rankings historicos o informacion necesaria para integridad deportiva, pueden conservarse en forma limitada cuando sea necesario para preservar el historial compartido, cumplir obligaciones legales o prevenir fraude.</p>
-<h2>9. Seguridad</h2>
+<p>Los datos procesados por Firebase Analytics se conservan conforme a la configuracion de retencion aplicable y a las politicas del proveedor. Los informes agregados pueden no identificar una cuenta individual.</p>
+<h2>9. Eliminacion de cuenta y datos</h2>
+<p>Podras solicitar la eliminacion de tu cuenta y datos mediante la <a href="./account-deletion.html">pagina de eliminacion de cuenta</a> o escribiendo a <a href="mailto:agusmachado@gmail.com">agusmachado@gmail.com</a>.</p>
+<p>La eliminacion puede no ser instantanea. Algunos hechos deportivos confirmados compartidos con otros usuarios, como resultados, fixtures, tablas o torneos, pueden conservarse en forma limitada y pseudonimizada, mostrando "Usuario eliminado", cuando sea necesario para preservar el historial compartido. La cuenta eliminada deja de ser accesible y no se reconecta automaticamente si la persona vuelve a registrarse.</p>
+<h2>10. Seguridad</h2>
 <p>Aplicamos medidas razonables para proteger la informacion, incluyendo controles de acceso, autenticacion y practicas tecnicas orientadas a reducir riesgos. Ningun sistema es completamente seguro, por lo que no podemos garantizar seguridad absoluta.</p>
-<h2>10. Menores de edad</h2>
-<p>Tenis &amp; Padel no esta dirigido a menores sin autorizacion de un adulto responsable. Si detectamos que se recolecto informacion de un menor sin autorizacion cuando esta sea necesaria, podremos restringir o eliminar la cuenta segun corresponda.</p>
-<h2>11. Cambios en esta politica</h2>
+<h2>11. Edad minima</h2>
+<p>Playround exige que sus usuarios tengan al menos 13 años. La fecha de nacimiento se utiliza para verificar esta elegibilidad y, una vez registrada por primera vez, no puede modificarse desde el flujo normal del producto.</p>
+<p>Playround no esta dirigido a personas menores de 13 años. La autorizacion de un adulto no sustituye este requisito. Si se detecta una cuenta o informacion perteneciente a una persona menor de 13 años, Playround puede restringir el acceso y eliminar la cuenta y sus datos conforme a esta Politica.</p>
+<h2>12. Cambios en esta politica</h2>
 <p>Podemos actualizar esta Politica de Privacidad para reflejar cambios del producto, requisitos legales o practicas operativas. Publicaremos la version actualizada con su fecha de ultima actualizacion. Si el cambio es relevante, podremos notificarlo dentro de la app, por email o por otros medios razonables.</p>
-<h2>12. Contacto</h2>
+<h2>13. Contacto</h2>
 <p>Para consultas sobre privacidad o ejercicio de derechos relacionados con tus datos, contactanos en agusmachado@gmail.com.</p>
 <p>Jurisdiccion de referencia: República Argentina.</p>
     </article>
     <footer>
-      Tenis & Pádel · Documentos legales publicados para acceso desde la app.
+      Playround · Documentos legales publicados para acceso desde la app.
     </footer>
   </main>
 </body>
